@@ -1,22 +1,26 @@
 {
   "expo": {
-    "name": "hikepack-client",
-    "slug": "hikepack-client",
-    "version": "1.0.0",
+    "name": "HikePack",
+    "slug": "hikepack",
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "hikepackclient",
-    "userInterfaceStyle": "automatic",
+    "scheme": "hikepack",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#1B1D1E",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "buildNumber": "26",
+      "bundleIdentifier": "com.janekks.hikepack"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.janekks.hikepack"
     },
     "web": {
       "bundler": "metro",
@@ -37,6 +41,12 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "20675950-c891-49d4-9f97-40501029586f"
+      }
+    },
+    "owner": "janekks"
   }
 }
