@@ -1,0 +1,14 @@
+services:
+  server:
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./server:/app/server
+      - ./shared:/app/shared
+      - /app/server/node_modules
+    command: npm run start:dev
+    deploy:
+      resources:
+        limits:
+          cpus: "8"
+          memory: 8192M
